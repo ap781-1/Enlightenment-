@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enlightenment & terror · a mind in revolution</title>
+    <!-- Google Fonts for clean blog style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,450;8..60,600&family=Inter:opsl,wght@14..32,300;14..32,400;14..32,500;14..32,600&display=swap" rel="stylesheet">
+    <!-- Font Awesome for subtle icons (optional) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #faf8f5;
+            color: #1a1e24;
+            font-family: 'Source Serif 4', serif;
+            line-height: 1.7;
+            font-weight: 400;
+            font-size: 1.1rem;
+            padding: 2rem 1rem;
+        }
+        .blog-container {
+            max-width: 820px;
+            margin: 0 auto;
+            background: #ffffff;
+            border-radius: 24px;
+            box-shadow: 0 12px 40px rgba(0,0,0,0.05), 0 4px 12px rgba(0,0,0,0.03);
+            padding: 3rem 2.5rem;
+        }
+        @media (max-width: 600px) {
+            body { padding: 0.8rem; }
+            .blog-container { padding: 2rem 1.5rem; }
+        }
+
+        /* headings — clean, slightly condensed */
+        h1 {
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            font-size: 2.8rem;
+            line-height: 1.15;
+            letter-spacing: -0.02em;
+            margin-top: 0.2rem;
+            margin-bottom: 0.25rem;
+            color: #0b1c2c;
+        }
+        .subhead {
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
+            font-size: 1.3rem;
+            color: #5a6573;
+            border-left: 4px solid #9f7e69;
+            padding-left: 1.2rem;
+            margin: 0.5rem 0 2rem 0;
+        }
+        h2 {
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            font-size: 1.9rem;
+            margin: 2.8rem 0 1rem 0;
+            letter-spacing: -0.01em;
+            color: #263446;
+            border-bottom: 2px solid #e5ddd4;
+            padding-bottom: 0.4rem;
+        }
+        h3 {
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            font-size: 1.4rem;
+            margin: 2rem 0 0.8rem 0;
+            color: #3d4e64;
+        }
+        /* blog-style pull quote or block */
+        .pull-quote {
+            font-size: 1.5rem;
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
+            line-height: 1.5;
+            color: #5c3b2a;
+            background: #f7f2ec;
+            padding: 1.8rem 2rem;
+            border-radius: 20px;
+            margin: 2rem 0;
+            border-left: 6px solid #b08968;
+            font-style: normal;
+            box-shadow: inset 0 1px 4px rgba(0,0,0,0.02);
+        }
+        .pull-quote i {
+            color: #8a6d56;
+            margin-right: 0.5rem;
+        }
+        /* regular paragraphs */
+        p {
+            margin-bottom: 1.4rem;
+            text-align: left;
+            word-break: break-word;
+        }
+        /* add a subtle dropcap to intro? optional */
+        .intro::first-letter {
+            font-size: 4rem;
+            float: left;
+            line-height: 0.8;
+            margin-right: 0.5rem;
+            color: #976f53;
+            font-weight: 500;
+            font-family: 'Source Serif 4', serif;
+        }
+        /* citation / reference styling */
+        .citation {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.95rem;
+            color: #6f5e51;
+            background: #f2efea;
+            padding: 0.2rem 0.5rem;
+            border-radius: 6px;
+            white-space: nowrap;
+        }
+        .ref-block {
+            font-size: 0.95rem;
+            border-top: 1px solid #dad3cb;
+            margin-top: 3rem;
+            padding-top: 2rem;
+            font-family: 'Inter', sans-serif;
+            color: #3a3f46;
+        }
+        .ref-block h4 {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            letter-spacing: 0.3px;
+            text-transform: uppercase;
+            color: #6c4f3a;
+        }
+        .ref-block p {
+            margin-bottom: 0.4rem;
+            font-size: 0.95rem;
+        }
+        /* markers for highlighted terms (like Public, private, etc) */
+        .concept {
+            background: #eae3db;
+            font-weight: 450;
+            padding: 0.1rem 0.3rem;
+            border-radius: 5px;
+            font-style: italic;
+            color: #2b3a47;
+        }
+        .smallcaps {
+            font-variant: small-caps;
+            font-weight: 500;
+        }
+        hr {
+            border: none;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #cdc2b6, transparent);
+            margin: 2rem 0;
+        }
+        /* footer/blog-meta */
+        .byline {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.9rem;
+            color: #726d66;
+            margin-top: -1rem;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+        .byline i {
+            color: #b18d71;
+        }
+
+        /* blockquote for Rousseau etc */
+        blockquote {
+            font-family: 'Inter', sans-serif;
+            background: #f3efe9;
+            padding: 1.6rem 2rem;
+            border-radius: 24px 24px 24px 8px;
+            margin: 1.8rem 0;
+            font-weight: 350;
+            border: 1px solid #e0d6cd;
+            color: #2d2f33;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.02);
+        }
+        blockquote p {
+            margin-bottom: 0.5rem;
+            font-size: 1.15rem;
+        }
+        blockquote footer {
+            font-size: 0.9rem;
+            color: #735f4f;
+            margin-top: 0.8rem;
+            text-align: right;
+            font-style: italic;
+        }
+        /* image placeholder (if any, but not needed) */
+        .thought-line {
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            color: #65584c;
+            font-size: 1rem;
+            margin: 1.5rem 0;
+        }
+        .thought-line i {
+            font-size: 1.6rem;
+            color: #aa8873;
+        }
+        /* responsive alignment */
+        .alignwide {
+            margin-left: -1rem;
+            margin-right: -1rem;
+        }
+    </style>
+</head>
+<body>
+<div class="blog-container">
+
+    <!-- title area -->
+    <h1>Enlightenment & terror</h1>
+    <div class="subhead">reason, unreason, and the mind of revolution · france 1789–1794</div>
+    
+    <!-- byline / meta -->
+    <div class="byline">
+        <i class="fas fa-feather-alt"></i> <span>essay by Atharva</span>
+        <span style="flex:1; text-align:right; letter-spacing:0.5px;"><i class="far fa-clock"></i> from a revolutionary notebook</span>
+    </div>
+
+    <!-- intro paragraph with slight dropcap effect using class -->
+    <p class="intro">The belief that with Enlightenment, the people gained knowledge, the people gained reason, rationality, science, and humanism, would be misleading—and that was never the whole story of the revolutionary era. If reason was regarded as the most important driving force, then how was unreason articulated? Reason was said to be light; that is to say, Enlightenment constituted itself as reason by saying what it was not. The question arises: what was darkness? What was not the domain of political reasoning? The purpose of this essay is to probe the ideas of different thinkers to see whether the events of the Terror were inspired by their ideas, or whether those events departed from the ideas themselves. Here, the claim is that the <span class="concept">Enlightenment as an event</span> took place <em>during</em> the French Revolution—not before or after.</p>
+
+    <!-- Rousseau block -->
+    <blockquote>
+        <p>“Man is born free, and everywhere he is in chains. Here's one who thinks he is the master of others, yet he is more enslaved than they are…”</p>
+        <footer>— Jean-Jacques Rousseau, <em>The Social Contract</em></footer>
+    </blockquote>
+
+    <p>Maximilien Robespierre, a principal figure of the Reign of Terror, was profoundly influenced by Jean‑Jacques Rousseau (H.Lewis 1849, 26) and regarded Rousseau's <em>Social Contract</em> as the bible of the revolution. Rousseau validated—if not supported—the ideas of Voltaire. Voltaire succeeded in turning the focus of history from the struggle of nations to that of civilization, placing emphasis on people rather than government. The problems faced by the revolution were, in structure, the same as those Rousseau examined, although not in the same timeframe. His selective rhetoric in the <em>Social Contract</em> gave revolutionary leaders the potential for fetterless condemnation of virtually anyone. The leaders drew support from the successful bourgeoisie, who felt they should achieve the class level of an sometimes bankrupt nobility rather than remain second‑class citizens. A question arises: how did the bourgeoisie <em>become</em> rational so suddenly? Or how was this transition from private being to reasoning public so swift?</p>
+
+    <!-- first section -->
+    <h2>Constituting the French people as a nation</h2>
+    <p>Censorship meant repressive mechanism. Yet repressive mechanism did not necessarily articulate complete muteness. The moment philosophers or writers were repressed, new ways emerged: how to write what one wanted without being censored—a reinvention of language. The attitude of the philosophers was printed and made available to the desiring subject (the public), thus becoming increasingly more literate. The public, inundated by propaganda, accepted even the most incredible rhetoric as factual. Increased literacy, brought forth by the Enlightenment, gave people the ability to read or hear the news, but did not teach the populace to separate rhetoric from fact. Enhanced literacy heightened the effectiveness of political pamphleteering. Hence the recognised effectiveness of published rhetoric increased the use of printed media. While official censorship in central Europe banned many books, 'truth' was everywhere seeping through every veneration of images receding.</p>
+
+    <p>The distinction between <span class="concept">public reasoning</span> and <span class="concept">private reasoning</span> soon perished. Everyone engaged only with reason. In private, one follows rules. In public, one engages in debate, discusses, disagrees, questions. The public cast itself loose as a forum in which private people came together to form a public, ready to compel public authority to legitimate itself before public opinion. The <em>publicum</em> developed into the public, the <em>subjectum</em> into the (reasoning) subject, the receiver of regulations from above into the ruling authorities' adversary. (Habermas 1991, 25‑26) While the citizens of France united, the consequences paved a way to split inside authorities—a discourse wherein Enlightenment ideologies played the major role.</p>
+
+    <div class="thought-line">
+        <i class="fas fa-comments"></i> <span><strong>discourse?</strong>  two conceptions of progress – radical democratic vs. materialist determinist.</span>
+    </div>
+
+    <!-- second main section -->
+    <h2>Two enlightenments, one terror</h2>
+    <p>Two fundamentally different conceptions of progress—radical democratic and materialistic determinist (alternatively Christian‑Unitarian) on one hand, and “Moderate” and Deist or Religious, championing the monarchical‑aristocratic order on the other—were diametrically opposed in their social and political consequences. They were also, from the outset, philosophically and theologically incompatible and indeed opposed each other. (Israel 2010, 12) Spinoza, with his one‑substance doctrine—body and soul, matter and mind are not distinct substances but a single substance viewed under different aspects—extends this “revolutionary” tendency metaphysically, politically, and regarding man’s highest good further than Descartes, Hobbes, or Bayle. On Spinoza’s principles, society would become more resistant to manipulation by religious authority, aristocracy, powerful oligarchies, and dictatorship, and more democratic, libertarian, and egalitarian. (Israel 2010, 1‑3)</p>
+
+    <p>Thus emerged two contesting tendencies during the revolution: <strong>Revolutionary</strong> and <strong>Counter‑revolutionary</strong>. The chance that the then‑Enlightening French could effect a rational change from monarchy to constitutional republic washed away in a rain of blood—the Reign of Terror. Not only individual violence but also the violence of place. Particular violent killing by the mob, showing the killing in a place where violent killing used to take place: violence had already been ritualised by the state. The mob took over the violence. Then the state, the citizens, the slaves—everyone realised the need for such a violence that took over all France. It was a united thought, seasoned with reason. One might disagree on grounds of <span class="concept">immorality</span>. But given the ideologies that swept over Europe, thanks to Enlightenment writers like Sade, it wasn't so simple.</p>
+
+    <!-- Sade quote -->
+    <div class="pull-quote">
+        <i class="fas fa-quote-left"></i> Sade believed true morality entailed following your darkest and most destructive passions to their farthest possible ends, even at the expense of other human life. ‘Humans are governed by these desires far more than by any rational impetus. Nobility is a fraud. Cruelty is natural. Immorality is the only morality, vice the only virtue.’ (Farago 2014, 2)
+    </div>
+
+    <p>Hence any action of the crowd could be justified as <em>volition</em>. To determine oneself to produce a representation with the consciousness of one’s own activity is called volition: the faculty of determining oneself with this consciousness of self‑activity is called the faculty of desire. (Fichte 2010, 9‑10) I would also like to answer: What would have been the desire of the subject at a family (private) level? As per Rousseau, the relation between father and children was subject to their preservation. Once the need of the children ceases, or the father is incapable of providing for them, the natural bond dissolves. The children are not answerable to the father, nor is the father responsible for the children; both become independent. Here we can compare the crowd as children and the monarch/government as father. When the ruler was unable to cater to the preservation of the public during the Great Fear or the Revolution, the natural bond between them dissolved and both entities became independent—thus making a rift inside the family (France).</p>
+
+    <!-- a short separator -->
+    <hr>
+
+    <h2>Reign as mental revolution</h2>
+    <p>I started by claiming that Enlightenment was still unfolding <em>during</em> the Revolution. By that I mean: the philosophical ideas were already in print well before 1793, but they did not fully reach the desiring subject (the public). Call it the unorganised censorship of France or an ignorant public. Although the Enlightenment writers had died before the eve of the French Revolution, their ideas were discussed and debated. The leaders of the revolution studied Rousseau’s work, as I said earlier, and used those texts to justify their most horrendous actions—like the attack on Danton, and so on. One could make a strong case that Voltaire and Montesquieu and others had cultivated the French psyche, that they had sown the seeds harvested during the Reign of Terror. As far as my title is concerned, Enlightenment ideas acted as a catalyst in many revolutions since the French, and it was because of this event that the French Revolution is also symbolic of <span class="concept">mental revolution</span> or the <span class="concept">revolution of the mind</span>.</p>
+
+    <!-- references block (clean blog style) -->
+    <div class="ref-block">
+        <h4><i class="fas fa-book-open" style="margin-right: 8px; color:#956b4e;"></i> references</h4>
+        <p>Farago, Jason. 2014. “Who is afraid of Marquis de Sade.” <em>BBC</em>, October 6: 2.</p>
+        <p>Fichte, Johann Gottlieb. 2010. <em>Attempt at a Critique of all Revelation.</em> Cambridge: Cambridge University Press.</p>
+        <p>H. Lewis, George. 1849. <em>The Life of Maximilien Robespierre.</em> Philadelphia: Carey and Hart.</p>
+        <p>Habermas, Jürgen. 1991. <em>The Structural Transformation of the Public Sphere.</em> Massachusetts: The MIT Press.</p>
+        <p>Israel, Jonathan. 2010. <em>A Revolution of the Mind.</em> New Jersey: Princeton University Press.</p>
+        <p>Rousseau, Jean-Jacques. December 2010. <em>The Social Contract.</em> Jonathan Bennett (ed.).</p>
+        <p style="margin-top: 1rem; font-style: italic;">— essay first drafted for ‘enlightenment and terror’ · formatted as a blog reflection.</p>
+    </div>
+
+    <!-- tiny footer line -->
+    <div style="font-family: Inter; font-size:0.85rem; color:#a49384; text-align:center; margin-top:2rem; border-top:1px dashed #ddd8d0; padding-top:1.5rem;">
+        <i class="far fa-sun"></i>  reason / unreason · lumière & ténèbres  <i class="far fa-moon"></i>
+    </div>
+</div>
+</body>
+</html>
